@@ -1,0 +1,326 @@
+@charset "UTF-8";
+/*=============================================
+=                  General                    =
+=============================================*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+button:focus {
+  outline: none;
+}
+
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+.navbar {
+  -webkit-box-shadow: 0 3px 18px rgba(0, 0, 0, 0.11);
+          box-shadow: 0 3px 18px rgba(0, 0, 0, 0.11);
+}
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+/* TODO: 加入背景圖片 */
+#header {
+  border-radius: 0px;
+  margin-bottom: 0px;
+  padding: 200px 0px;
+  background-image: url("../images/minnion1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/*=============================================
+=                Section 1                    =
+=============================================*/
+.intro-box,
+.intro-line,
+.intro-box .icon {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.intro-box {
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding: 15px 15px;
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+}
+
+.intro-box .icon {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.intro-box .intro-line {
+  width: 20px;
+  height: 6px;
+  border-radius: 3px;
+  margin: 10px auto;
+}
+
+.intro-box:hover {
+  background: white;
+  -webkit-box-shadow: 0px 22px 22px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 22px 22px rgba(0, 0, 0, 0.25);
+  bottom: 7px;
+}
+
+.intro-box:hover .icon {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.intro-box:hover .intro-line {
+  width: 40px;
+}
+
+/*=============================================
+=                  Section 3                  =
+=============================================*/
+.gallery-block,
+.gallery-text {
+  -webkit-transition: all .5s ease-out;
+  transition: all .5s ease-out;
+}
+
+.gallery-block {
+  position: relative;
+  bottom: 0px;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+  background-size: cover;
+  height: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  width: 300px;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 0 0 0px rgba(255, 99, 71, 0);
+          box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2), 0 0 0 0px rgba(255, 99, 71, 0);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.gallery-text {
+  color: white;
+  font-weight: 700;
+  text-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.gallery-block:hover {
+  bottom: 10px;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  -webkit-box-shadow: 0 25px 20px rgba(0, 0, 0, 0.2), 0 0 0 3px #47cbff;
+          box-shadow: 0 25px 20px rgba(0, 0, 0, 0.2), 0 0 0 3px #47cbff;
+}
+
+.gallery-block:hover .gallery-text {
+  color: #c4dff6;
+}
+
+/*=============================================
+=                     section5                    =
+=============================================*/
+#galleryImage9 {
+  background-image: url("../images/minion-icegif.gif");
+}
+
+/*=============================================
+=                     section4                    =
+=============================================*/
+.container {
+  width: 1000px;
+  margin: 50px auto;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col {
+  width: calc(100%/3);
+  padding: 0px 10px;
+}
+
+.col-card {
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0px 3px 3px rgba(24, 22, 23, 0.5);
+          box-shadow: 0px 3px 3px rgba(24, 22, 23, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  position: relative;
+  bottom: 0px;
+}
+
+.col-card:hover {
+  -webkit-box-shadow: 0px 10px 30px rgba(24, 22, 23, 0.5);
+          box-shadow: 0px 10px 30px rgba(24, 22, 23, 0.5);
+  bottom: 10px;
+}
+
+.col-card:hover img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.col-card:hover img {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+}
+
+.col-card img {
+  width: 100%;
+  display: block;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.col-card-body {
+  padding: 15px 15px;
+}
+
+.col-card-body h3 {
+  margin-top: 0px;
+}
+
+.col-card-body p {
+  margin-bottom: 0px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .col {
+    width: 100%;
+  }
+  h3 {
+    color: rgba(233, 236, 20, 0.993);
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .container {
+    width: 570px;
+  }
+  .col {
+    width: 50%;
+  }
+}
+
+/*=============================================
+=                   Footer                    =
+=============================================*/
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-end p, a {
+  font-size: 8px;
+  margin: 0;
+  text-align: center;
+}
+
+#goBackBtn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 1000;
+  border-radius: 50%;
+}
+
+/*=============================================
+=                   AD-BOX                    =
+=============================================*/
+.ad-box {
+  width: 300px;
+  position: fixed;
+  right: -275px;
+  bottom: 80px;
+  z-index: 100;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.ad-box.active {
+  right: 0px;
+}
+
+.left-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: 1px solid #ddd;
+}
+
+.ad-toggle-btn {
+  width: 25px;
+  border: none;
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
+}
+
+.ad-toggle-btn > i {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+.ad-toggle-btn:hover {
+  color: #666;
+}
+
+.right-part {
+  padding: 10px;
+}
+
+.right-part > p {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
